@@ -1,6 +1,6 @@
 from typing import Any
 import httpx
-from fastmcp import FastMCP
+from mcp.server.fastmcp import FastMCP
 
 # Initialize FastMCP server
 mcp = FastMCP("weather")
@@ -55,7 +55,4 @@ async def get_alerts(state: str) -> str:
     return "\n---\n".join(alerts)
 
 
-@mcp.resource("echo://{message}")
-def echo_resource(message: str) -> str:
-    """Echo a message as a resource"""
-    return f"Resource echo: {message}"
+
