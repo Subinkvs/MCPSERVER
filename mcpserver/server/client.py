@@ -16,7 +16,6 @@ async def run_memory_chat():
 
     # MCP server config
     config_file = "server/weather.json"
-
     print("Initializing chat...")
 
     # Create MCP client
