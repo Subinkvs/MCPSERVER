@@ -1,15 +1,18 @@
+
 {
-    "mcpServers":{
-        "weather": {
+  "mcpServers": {
+    "email": {
       "command": "uv",
       "args": [
         "run",
         "--with",
         "mcp[cli]",
+        "--with",
+        "python-dotenv",
         "mcp",
         "run",
-        "C:\\Users\\ADMIN\\Desktop\\AI\\MCP\\mcpserver\\server\\email_server.py"
+        "C:/Users/PC/Desktop/AI TOOLS/MCP_EMAIL/MCPSERVER/mcpserver/server/email_server.py"
       ]
     }
-}
+  }
 }
